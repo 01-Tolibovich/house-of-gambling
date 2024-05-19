@@ -10,7 +10,7 @@
   .main-info {
     margin-right: 3rem;
 
-    @include mediaMax($xxl) {
+    @include mediaMax($xxxl) {
       margin-right: 8rem;
     }
 
@@ -19,7 +19,7 @@
       font-weight: 500;
       line-height: 1;
 
-      @include mediaMax($xxl) {
+      @include mediaMax($xxxl) {
         font-size: 4rem;
       }
   
@@ -35,7 +35,7 @@
       margin-top: 1.62rem;
       display: block;
 
-      @include mediaMax($xxl) {
+      @include mediaMax($xxxl) {
         font-size: 1.5rem;
       }
     }
@@ -46,7 +46,7 @@
       border-radius: 2.5rem;
       margin-top: 3rem;
 
-      @include mediaMax($xxl) {
+      @include mediaMax($xxxl) {
         font-size: 1.5rem;
       }
     }
@@ -54,7 +54,7 @@
   
 
   .logo-icon-block {
-    // position: absolute;
+    height: 63vh;
     left: 50%;
     overflow: hidden;
     display: grid;
@@ -62,6 +62,10 @@
     min-width: 0;
     overflow: hidden;
     align-self: flex-start;
+
+    @include mediaMax($xxxl) {
+      height: 70vh;
+    }
     
     .first-column {
       opacity: 0.2;
