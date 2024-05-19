@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+@function getMaxWidth($max) {
+  @return $max - 1px;
+}
+
+@mixin mediaMin($min) {
+  @media (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin mediaMax($max) {
+  @media (max-width: getMaxWidth($max)) {
+    @content;
+  }
+}
+
+@mixin mediaMinMax($min, $max) {
+  @media (min-width: $min) and (max-width: getMaxWidth($max)) {
+    @content;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.header-wrapper {
+  padding-top: 1.5rem;
+  .nav-menu {
+    border: 0.25rem solid $primary-color;
+    border-radius: 3.75rem;
+    position: relative;
+    
+    ul {
+      display: grid;
+      grid-auto-flow: column;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2.37rem;
+
+      li {
+        list-style: none;
+        list-style-type: none;
+      }
+    }
+  }
+}

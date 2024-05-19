@@ -1,0 +1,109 @@
+@import "../../styles/variables.scss";
+@import "../../styles/maxins.scss";
+
+.home-page {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+
+  .main-info {
+    margin-right: 3rem;
+
+    @include mediaMax($xxl) {
+      margin-right: 8rem;
+    }
+
+    .title {
+      font-size: 6rem;
+      font-weight: 500;
+      line-height: 1;
+
+      @include mediaMax($xxl) {
+        font-size: 4rem;
+      }
+  
+      span {
+        display: block;
+        color: $primary-color;
+      }
+    }
+  
+    .description {
+      font-size: 2rem;
+      opacity: 0.6;
+      margin-top: 1.62rem;
+      display: block;
+
+      @include mediaMax($xxl) {
+        font-size: 1.5rem;
+      }
+    }
+  
+    button {
+      font-size: 2rem;
+      padding: 1.25rem 4.5rem;
+      border-radius: 2.5rem;
+      margin-top: 3rem;
+
+      @include mediaMax($xxl) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+
+  .logo-icon-block {
+    // position: absolute;
+    left: 50%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    min-width: 0;
+    overflow: hidden;
+    align-self: flex-start;
+    
+    .first-column {
+      opacity: 0.2;
+    }
+
+    .second-column {
+      opacity: 0.6;
+    }
+
+    .third-column {
+      opacity: 0.4;
+    }
+  }
+
+  .articles-wrapper {
+    margin-left: 2rem;
+    border-radius: 4rem;
+    border: 3px solid $primary-color;
+    padding: 1.5rem;
+    position: relative;
+    height: 400px;
+    overflow-y: scroll;
+
+    article:nth-child(1) {
+      background-color: $primary-color;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    article {
+      padding: 1rem 4rem;
+      border-radius: 5rem;
+      border: 3px solid $primary-color;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: 300ms ease;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+}

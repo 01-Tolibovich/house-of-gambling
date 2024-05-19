@@ -1,0 +1,29 @@
+@import "../styles//variables.scss";
+
+.main-layout-wrapper {
+  background-color: $bg-color;
+  height: 100vh;
+  display: grid;
+  align-content: space-between;
+  grid-template-rows: 1fr auto;
+  // overflow-y: hidden;
+
+  .dot-light-1 {
+    position: absolute;
+    left: 0;
+    height: 100vh;
+  }
+
+  .dot-light-2 {
+    position: absolute;
+    width: 574px;
+    height: 574px;
+    right: 0;
+    bottom: 0;
+  }
+
+  .main-layout {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+}
