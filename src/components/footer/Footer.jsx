@@ -11,51 +11,53 @@ import { ReactComponent as VK } from "../../assets/icons/social-media-icons/vk.s
 import "./styles.scss";
 
 const Footer = () => {
-  const footerLinks = [
-    {
-      text: "Terms & Conditions",
-      link: "#",
-    },
-    {
-      text: "Cookies",
-      link: "#",
-    },
-    {
-      text: "Contacts",
-      link: "#",
-    },
-    {
-      text: "Careers",
-      link: "#",
-    },
-    {
-      text: "Brand Guide",
-      link: "#",
-    },
-  ];
-  return (
-    <footer className="footer">
-      <div className="container footer-section">
-        <ul className="footer-links">
-          {footerLinks.map((link, index) => (
-            <li key={index}>
-              <NavLink to={link.link}>{link.text}</NavLink>
-            </li>
-          ))}
-        </ul>
-        <div className="social-medias-icon">
-        <div className="container social-medias-title">Our social media:</div>
-          <Twitter />
-          <Facebook />
-          <Instagram />
-          <Youtube />
-          <Tiktok />
-          <Telegram />
-          <VK />
-        </div>
-      </div>
-    </footer>
-  );
+	const footerLinks = [
+		{
+			text: "Terms & Conditions",
+			link: "#",
+		},
+		{
+			text: "Cookies",
+			link: "#",
+		},
+		{
+			text: "Contacts",
+			link: "#",
+		},
+		{
+			text: "Careers",
+			link: "#",
+		},
+		{
+			text: "Brand Guide",
+			link: "#",
+		},
+	];
+	return (
+		<footer className="footer">
+			<div className="container footer-section">
+				<ul className="footer-links">
+					{footerLinks.map((link, index) => (
+						<li key={index}>
+							<NavLink to={link.link}>{link.text}</NavLink>
+						</li>
+					))}
+				</ul>
+				<div className="social-wrapper">
+					<div className="social-medias-title">Our social media:</div>
+					<div className="social-medias-icon">
+						<Twitter />
+						<Facebook />
+						<Instagram />
+						<Youtube />
+						<Tiktok />
+						<Telegram />
+						<VK />
+					</div>
+				</div>
+			</div>
+		</footer>
+	);
 };
 
 export default Footer;

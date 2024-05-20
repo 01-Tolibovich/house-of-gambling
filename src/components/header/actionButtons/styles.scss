@@ -14,4 +14,12 @@
 			display: none;
 		}
 	}
+
+	.mobile-menu-buttons {
+		display: none;
+
+		@include mediaMax($md) {
+			display: block;
+		}
+	}
 }

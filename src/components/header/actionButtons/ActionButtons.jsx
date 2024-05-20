@@ -9,16 +9,24 @@ import "./styles.scss";
 
 const ActionButtons = () => {
   const [lang, setLang] = useState("EN")
+  const [mobileMenuButton, setMobileMenuButton] = useState(false);
 
   const handleCount = () => {
     setLang(lang === "EN" ? "RU" : "EN" )
   }
+
+  const menuShowToggle = () => {
+    setMobileMenuButton(!mobileMenuButton)
+  }
+
   return (
     <div className="action-buttons">
       <ButtonUI onClick={handleCount}><Lang /><span>{lang}</span></ButtonUI>
       <ButtonUI>LOG IN</ButtonUI>
       <ButtonUI primaryButton>SIGN UP</ButtonUI>
-
+      <div className="mobile-menu-buttons" role="button" onClick={menuShowToggle}>
+        {mobileMenuButton ? <OpenIcon /> : <CloseIcon />}
+      </div>
     </div>
   );
 };
