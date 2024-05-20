@@ -1,9 +1,22 @@
-
+@import "../../styles/variables.scss";
+@import "../../styles/maxins.scss";
 
 .logo-slides-desktop-wrapper {
-  height: 70vh;
-  
-  svg {
-    width: 100% !important;
+  // height: 70vh;
+
+  .slick-slider .slick-list {
+    height: 78vh !important;
+
+    @include mediaMax($xxxl) {
+      height: 76vh !important;
+    }
+
+    @include mediaMax($lg) {
+      height: auto !important;
+    }
   }
+  
+  // svg {
+  //   width: 100% !important;
+  // }
 }

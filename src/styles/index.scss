@@ -1,16 +1,17 @@
 @import "./variables.scss";
+@import "./maxins.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: $primary-color $bg-color;
 }
 body {
   font-family: $primary-font;
   color: $primary-text-color;
   font-size: 16px;
-  scrollbar-width: thin;
-  scrollbar-color: $primary-color $bg-color;
 
   a {
     text-decoration: none;
@@ -22,5 +23,9 @@ body {
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
+
+    @include mediaMax($xl) {
+      max-width: 1200px;
+    }
   }
 }

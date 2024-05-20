@@ -12,7 +12,7 @@ import { ReactComponent as SoccerIcon } from "../../assets/icons/main-icons/Socc
 // import "slick-carousel/slick/slick-theme.css";
 import "./styles.scss";
 
-const LogoSliderDesktop = ({rtl}) => {
+const LogoSliderDesktop = ({rtl, vertical}) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -24,20 +24,35 @@ const LogoSliderDesktop = ({rtl}) => {
     autoplay: true,
     cssEase: 'linear',
     arrows: false,
-    infinite: true,
     slidesToShow: 7,
     slidesToScroll: 1,
-    vertical: true,
-    variableWidth: false,
-    verticalSwiping: true,
-    swipeToSlide: true,
-    verticalSwiping: false,
-    beforeChange: function (currentSlide, nextSlide) {
-      console.log("before change", currentSlide, nextSlide);
-    },
-    afterChange: function (currentSlide) {
-      console.log("after change", currentSlide);
-    },
+    vertical: vertical,
+    responsive: [
+      {
+        breakpoint: 1150,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (

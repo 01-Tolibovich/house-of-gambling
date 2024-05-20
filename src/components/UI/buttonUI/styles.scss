@@ -8,10 +8,21 @@
   color: #ffffff;
   display: flex;
   gap: 0.5rem;
+  transition: 300ms ease;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
 }
 
 .primary-button {
   background-color: $primary-color;
   border: 1px solid transparent;
-
 }

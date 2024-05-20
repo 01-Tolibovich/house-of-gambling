@@ -35,7 +35,6 @@ const Footer = () => {
   ];
   return (
     <footer className="footer">
-      <div className="container social-medias-title">Our social media:</div>
       <div className="container footer-section">
         <ul className="footer-links">
           {footerLinks.map((link, index) => (
@@ -44,7 +43,8 @@ const Footer = () => {
             </li>
           ))}
         </ul>
-        <div>
+        <div className="social-medias-icon">
+        <div className="container social-medias-title">Our social media:</div>
           <Twitter />
           <Facebook />
           <Instagram />

@@ -2,22 +2,23 @@
 
 .main-layout-wrapper {
   background-color: $bg-color;
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   align-content: space-between;
   grid-template-rows: 1fr auto;
-  // overflow-y: hidden;
+  position: relative;
 
   .dot-light-1 {
     position: absolute;
     left: 0;
     height: 100vh;
+    width: 100%;
   }
 
   .dot-light-2 {
     position: absolute;
-    width: 574px;
-    height: 574px;
+    width: 100%;
+    height: auto;
     right: 0;
     bottom: 0;
   }
