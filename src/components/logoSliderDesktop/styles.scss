@@ -2,7 +2,6 @@
 @import "../../styles/maxins.scss";
 
 .logo-slides-desktop-wrapper {
-  // height: 70vh;
 
   .slick-slider .slick-list {
     height: 78vh !important;
@@ -13,10 +12,24 @@
 
     @include mediaMax($lg) {
       height: auto !important;
+      svg {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+
+    @include mediaMax($md) {
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+
+    @include mediaMax($sm) {
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
     }
   }
-  
-  // svg {
-  //   width: 100% !important;
-  // }
 }

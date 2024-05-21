@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { ButtonUI } from "../../UI";
 
 import {ReactComponent as Lang} from "../../../assets/icons/lang-icon.svg"
@@ -7,16 +6,11 @@ import { ReactComponent as OpenIcon } from "../../../assets/icons/common/Menu-op
 import { ReactComponent as CloseIcon } from "../../../assets/icons/common/Menu-close.svg";
 import "./styles.scss";
 
-const ActionButtons = () => {
+const ActionButtons = ({mobileMenuButton, menuShowToggle}) => {
   const [lang, setLang] = useState("EN")
-  const [mobileMenuButton, setMobileMenuButton] = useState(false);
 
   const handleCount = () => {
     setLang(lang === "EN" ? "RU" : "EN" )
-  }
-
-  const menuShowToggle = () => {
-    setMobileMenuButton(!mobileMenuButton)
   }
 
   return (
@@ -25,7 +19,7 @@ const ActionButtons = () => {
       <ButtonUI>LOG IN</ButtonUI>
       <ButtonUI primaryButton>SIGN UP</ButtonUI>
       <div className="mobile-menu-buttons" role="button" onClick={menuShowToggle}>
-        {mobileMenuButton ? <OpenIcon /> : <CloseIcon />}
+        {mobileMenuButton ? <CloseIcon /> :  <OpenIcon />}
       </div>
     </div>
   );

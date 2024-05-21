@@ -31,24 +31,22 @@ const LogoSliderDesktop = ({rtl, vertical}) => {
       {
         breakpoint: 1150,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 9,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToShow: 8,
+          slidesToScroll: 1,
+          initialSlide: 1
         }
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 6,
           slidesToScroll: 1
         }
       }

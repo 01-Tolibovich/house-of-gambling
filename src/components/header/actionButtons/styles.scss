@@ -10,16 +10,39 @@
 	gap: 0.87rem;
 
 	@include mediaMax($lg) {
-		:nth-child(2), :nth-child(3) {
+		button:nth-child(2), button:nth-child(3) {
 			display: none;
+		}
+	}
+
+	button {
+
+		@include mediaMax($lg) {
+			width: 36px;
+			height: 36px;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				width: 100%;
+			}
+
+			span {
+				display: none;
+			}
 		}
 	}
 
 	.mobile-menu-buttons {
 		display: none;
 
-		@include mediaMax($md) {
-			display: block;
+		@include mediaMax($lg) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
 		}
 	}
 }

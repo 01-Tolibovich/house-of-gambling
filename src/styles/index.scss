@@ -13,6 +13,10 @@ body {
   color: $primary-text-color;
   font-size: 16px;
 
+  @include mediaMax($lg) {
+    overflow-x: hidden;
+  }
+
   a {
     text-decoration: none;
     color: $primary-text-color;
@@ -26,6 +30,10 @@ body {
 
     @include mediaMax($xl) {
       max-width: 1200px;
+    }
+
+    @include mediaMax($lg) {
+      padding: 0;
     }
   }
 }
