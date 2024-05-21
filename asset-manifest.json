@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/house-of-gambling/static/css/main.77d50fc0.css",
-    "main.js": "/house-of-gambling/static/js/main.edd61b14.js",
+    "main.js": "/house-of-gambling/static/js/main.d319a483.js",
     "static/media/dot-Light-2.png": "/house-of-gambling/static/media/dot-Light-2.7516852128fe1f30bb50.png",
     "static/media/dot-Light.png": "/house-of-gambling/static/media/dot-Light.2e6b239849a62b12f9da.png",
     "static/media/Soccer.svg": "/house-of-gambling/static/media/Soccer.729592f9dd41ee02e4fb5a8a04c527e2.svg",
@@ -21,10 +21,10 @@
     "static/media/Menu-open.svg": "/house-of-gambling/static/media/Menu-open.223352dba88e4402f8f0448a9fb035d6.svg",
     "static/media/Menu-close.svg": "/house-of-gambling/static/media/Menu-close.9faf46263bfff4abf64b564c97a5cfc0.svg",
     "main.77d50fc0.css.map": "/house-of-gambling/static/css/main.77d50fc0.css.map",
-    "main.edd61b14.js.map": "/house-of-gambling/static/js/main.edd61b14.js.map"
+    "main.d319a483.js.map": "/house-of-gambling/static/js/main.d319a483.js.map"
   },
   "entrypoints": [
     "static/css/main.77d50fc0.css",
-    "static/js/main.edd61b14.js"
+    "static/js/main.d319a483.js"
   ]
 }
