@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/react-deploy/static/css/main.77d50fc0.css",
+    "main.js": "/react-deploy/static/js/main.7f6ea103.js",
+    "static/media/dot-Light-2.png": "/react-deploy/static/media/dot-Light-2.7516852128fe1f30bb50.png",
+    "static/media/dot-Light.png": "/react-deploy/static/media/dot-Light.2e6b239849a62b12f9da.png",
+    "static/media/Soccer.svg": "/react-deploy/static/media/Soccer.729592f9dd41ee02e4fb5a8a04c527e2.svg",
+    "static/media/Crown.svg": "/react-deploy/static/media/Crown.11b7beb215577bd8335a54e841852f07.svg",
+    "static/media/vk.svg": "/react-deploy/static/media/vk.ee042045ba66492aace178fccfd9aeac.svg",
+    "static/media/M.svg": "/react-deploy/static/media/M.f5eb7eb961425e060a4938da8406d7d5.svg",
+    "static/media/instagram.svg": "/react-deploy/static/media/instagram.6c4a0c5af6d47885f2f40d8a425cc18c.svg",
+    "static/media/Shield.svg": "/react-deploy/static/media/Shield.fe98325763afd3ed8e9b193331dc5fe4.svg",
+    "static/media/tiktok.svg": "/react-deploy/static/media/tiktok.c028bdeee9a76da93dd0169ee0262def.svg",
+    "static/media/twitter.svg": "/react-deploy/static/media/twitter.6a18fa3d2a3167064a221588f9e930c1.svg",
+    "static/media/youtube.svg": "/react-deploy/static/media/youtube.baecffc37455c1660d36ec299381ec89.svg",
+    "static/media/Timer.svg": "/react-deploy/static/media/Timer.dfa01cac033758209d242b7502ab19b2.svg",
+    "static/media/lang-icon.svg": "/react-deploy/static/media/lang-icon.467570687deab3048fb8d35664422620.svg",
+    "static/media/telegram.svg": "/react-deploy/static/media/telegram.2d147f5a69f09f6f6d5c50b5aeaaa68c.svg",
+    "static/media/facebook.svg": "/react-deploy/static/media/facebook.3de550e35c9dd679e198f22d921d096e.svg",
+    "index.html": "/react-deploy/index.html",
+    "static/media/Menu-open.svg": "/react-deploy/static/media/Menu-open.223352dba88e4402f8f0448a9fb035d6.svg",
+    "static/media/Menu-close.svg": "/react-deploy/static/media/Menu-close.9faf46263bfff4abf64b564c97a5cfc0.svg",
+    "main.77d50fc0.css.map": "/react-deploy/static/css/main.77d50fc0.css.map",
+    "main.7f6ea103.js.map": "/react-deploy/static/js/main.7f6ea103.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77d50fc0.css",
+    "static/js/main.7f6ea103.js"
+  ]
+}
